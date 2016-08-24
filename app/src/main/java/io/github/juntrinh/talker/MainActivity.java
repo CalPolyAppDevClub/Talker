@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity implements OnInitListener{
 
         editText = (EditText)findViewById(R.id.enter_text);
         buttonSpeak = (Button)findViewById(R.id.button_speak);
+        textToSpeech = new TextToSpeech(this, this);
 
         buttonSpeak.setOnClickListener(new View.OnClickListener() {
             @Override
